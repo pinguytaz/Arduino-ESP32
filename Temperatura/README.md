@@ -22,5 +22,5 @@ En este proyecto ejemplo se pueden aprender varias cosas:
 ## Enlaces donde se desarrollan estos temas.
 - [Termómetro Arduino]
 - [Termómetro Arduino (E/S Digital)](https://www.pinguytaz.net/index.php/2019/11/14/termometro-arduino-e-s-digital-1-5/)
--[Termómetro Arduino (Entrada Análogicas)](https://www.pinguytaz.net/index.php/2019/11/17/termometro-arduino-entrada-analogicas-2-5/)
--[Termómetro Arduino (Display)]
+- [Termómetro Arduino (Entrada Análogicas)](https://www.pinguytaz.net/index.php/2019/11/17/termometro-arduino-entrada-analogicas-2-5/)
+- [Termómetro Arduino (Display)]
