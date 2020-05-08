@@ -12,7 +12,7 @@ Repositorio de fuentes de los video-Tutoriales de Arduino
 ## Funciones en Arduino II (FuncArduino ejemplos 7)
 Un solo ejemplo con esquema de montaje (3 leds y un boton, cambio por estados)
 
-[Funciones en arduino II] Seunda parte Funciones en Arduino
+[Funciones en arduino II] (https://youtu.be/Ut-fyMkDK3U)
 - Aclaración funciones con retorno 
 - Constantes y #define
 - Variables estaticas, como tener estados controlados.
