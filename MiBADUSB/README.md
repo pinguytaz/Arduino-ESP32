@@ -1,6 +1,6 @@
 # MiBADUSB
 [![license](https://www.pinguytaz.net/IMG_GITHUB/gplv3-with-text-84x42.png)](https://github.com/pinguytaz/MiBADUSB/blob/master/LICENSE)
-[![Plataforma](https://www.pinguytaz.net/IMG_GITHUB/Arduino.png)](https://arduino.cc)
+[![Plataforma](https://www.pinguytaz.net/IMG_GITHUB/Arduinoa.png)](https://arduino.cc)
 
 
 __AVISO LEGAL Y RENUNCIA DE RESPONSABILIDADES__
