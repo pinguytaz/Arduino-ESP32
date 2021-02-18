@@ -5,7 +5,7 @@
 
 __HMC5883L_3Axi__ es un proyecto de código abierto con el unico fin de educación e investigación, en el uso del sensor de campo magnetico para su uso en Arduino.
 
-## Posible usos del sen sor HMC5883L
+## Posible usos del sensor HMC5883L
 Las aplicaciones de este sensor son diversa, en especial si los juntamos con un sensor de gravedad, algunos
 usos que se proponen son:
 1.- **Brujuja** 
