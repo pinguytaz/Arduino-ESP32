@@ -1,8 +1,9 @@
 # Libreria HMC5883L_3Axi
-[![license](https://www.pinguytaz.net/IMG_GITHUB/gplv3-with-text-84x42.png)](https://github.com/pinguytaz/MiBADUSB/blob/master/LICENSE)
+[![license](https://www.pinguytaz.net/IMG_GITHUB/gplv3-with-text-84x42.png)]
 
+<img src=https://github.com/pinguytaz/Arduino/blob/master/HMC5883L_3Axi/extras/Montaje.jpg width="200" />
 
-__HMC5883L_3Axi es un proyecto de código abierto con el unico fin de educación e investigación, en el uso del sensor de campo magnetico para su uso en Arduino.
+__HMC5883L_3Axi__ es un proyecto de código abierto con el unico fin de educación e investigación, en el uso del sensor de campo magnetico para su uso en Arduino.
 
 ## Posible usos del sen sor HMC5883L
 Las aplicaciones de este sensor son diversa, en especial si los juntamos con un sensor de gravedad, algunos
