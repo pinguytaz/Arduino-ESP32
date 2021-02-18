@@ -15,5 +15,6 @@ usos que se proponen son:
 saber donde esta mirando nuestro equipo.
 
 __Website__: https://www.pinguytaz.net
+__Libreria__: https://github.com/pinguytaz/Arduino/blob/master/HMC5883L_3Axi/HMC5883L_3Axi.zip
    
 
