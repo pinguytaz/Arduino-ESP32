@@ -8,8 +8,7 @@
   Balanza para pesar piezas, recalibrable a diferentes piezas, el interfaz es una apliacion movil realizada con AppInventor y el protocolo de comunicación 
   es LibCaronte por el canal de Bluetooth.
   
-- HMC5883L_3Axi
-- MiBADUSB
+- **MiBADUSB**
   Aplicación en Leonardo-USB que nos permite generar Script BADUSB.
   
 - **esterResistencia**
