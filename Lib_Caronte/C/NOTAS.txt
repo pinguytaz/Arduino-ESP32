@@ -1,0 +1,52 @@
+Gestion Bluetooth Linux desde linea comandos
+Graficamente blueman por ejemplo.
+
+systemctl status bluetooth   // Confirmar el estado de Bluetooth
+
+HCICONFIG
+---------
+hciconfig     // Nos permite ver los dispositivos Bluetooth de nuestro PC
+hciconfig -a hciX name "<Nombre del dispositivo>  // Ponemos el nombre
+USOS: hciconfig -a hciX <comando>
+   down , up  // Apaga o enciende dispositivo
+   lm <modo>  // Nos da el modo en el que esta.
+
+BLUETOOTHCTL (ejecutar bluetoothctl y entramos en comandos)
+------------
+   list            Dispositivos Bluetooth de nuestro PC
+   select <mac>    Seleccionamos el dispositivo a tratar
+   show            Información con servicios UUID disponibles.
+   power on | off  Encender o apagar dispositivo.
+   discoverable on | off  Lo pone visible
+   scan on  | off   Activar escaneo.
+   pairable on|off  Ponerse en modo pareble.
+   paired-devices  Dispositivos pareados con el seleccionado 
+
+Parear
+bluetoothctl 
+   select <mac>    Seleccionamos el dispositivo a tratar
+   power on
+   agent on
+   discoverable on    
+   paireable on
+   scan on
+   pair <mac del dispo a parearse>
+   scan off
+   paireable off
+   discoverable off    
+
+   paired-devices     Nos confirma que nos hemos pareado
+ 
+Establecer canal
+   sudo sdptool add --channel=22 SP
+-------FALTA
+
+
+
+
+Windows
+CXXFLAGS = -I"C:/DEV-CPP/lib/gcc/mingw32/3.4.2/include" \
+           -I"C:/DEV-CPP/include/c++/3.4.2/backward" \
+           -I"C:/DEV-CPP/include/c++/3.4.2/mingw32" \
+           -I"C:/DEV-CPP/include/c++/3.4.2" \
+           -I"C:/DEV-CPP/include" 
