@@ -42,7 +42,9 @@ Las funciones basicas para el uso del la libreria "LibCaronte" son las siguiente
        - Datos[]
 
 
-Para un mejor uso se puede ver los ejemplos y un ejemplo de uso de esta libreria fuera de este repositorio es la **balanza de piezas** que se comunica con una aplicación por bluetooth con una aplicación movil (desarrollada en AppInventor)
+Para un mejor uso se puede ver los ejemplos y un ejemplo de uso de esta libreria fuera de este repositorio es la **balanza de piezas** 
+(https://github.com/pinguytaz/Arduino/tree/master/Balanza) que una aplicación movil (desarrollada en AppInventor) por Bluetooth
+
 
 __Website__: https://www.pinguytaz.net
 
