@@ -1,0 +1,8 @@
+Tarjetas adicionales
+ESP32
+   https://dl.espressif.com/dl/package_esp32_index.json
+
+Driver CP22102
+https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
+
+
