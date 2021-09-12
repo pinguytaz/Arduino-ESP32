@@ -8,6 +8,7 @@ __Enlaces.txt__
     
 __ES_Digitales__ 
     Este directorio contiene los ejemplos de Entradas y Salidad Digitales.
+   
     1.- ES_Digitales: Ejemplo simple con un boton para ir conmutando los LEDs conectados a la salidas digitales del Arduino
     
     2.- XXDigitales: 
@@ -17,5 +18,5 @@ __ES_Digitales__
 
 
 
-__Website__: https://www.pinguytaz.net
+>__Website__: https://www.pinguytaz.net
 
