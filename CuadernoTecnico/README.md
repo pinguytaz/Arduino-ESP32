@@ -5,6 +5,13 @@
 
 __Enlaces.txt__ 
     Este fichero contiene enlaces de interes para Arduino y ESP: Drivers, Tarjetas adicionales 
+    
+__ES_Digitales__ 
+    Este directorio contiene los ejemplos de Entradas y Salidad Digitales.
+    1.- ES_Digitales: Ejemplo simple con un boton para ir conmutando los LEDs conectados a la salidas digitales del Arduino
+    
+    2.- XXDigitales: 
+    
 
 
 
