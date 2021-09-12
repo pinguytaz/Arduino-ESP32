@@ -9,9 +9,9 @@ __Enlaces.txt__
 __ES_Digitales__ 
     Este directorio contiene los ejemplos de Entradas y Salidad Digitales.
    
-    1.- **ES_Digitales**: Ejemplo simple con un boton para ir conmutando los LEDs conectados a la salidas digitales del Arduino
+    1. **1ES_Digitales**: Ejemplo simple con un boton para ir conmutando los LEDs conectados a la salidas digitales del Arduino
     
-    2.- **Ej_DosLeds**: Ejemplo de codificación para ambas plataformas, con funciones de preprocesador.
+    2. **Ej_DosLeds**: Ejemplo de codificación para ambas plataformas, con funciones de preprocesador.
         
 
 
