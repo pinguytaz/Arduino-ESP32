@@ -14,6 +14,8 @@ __ES_Digitales__
  -  __Ej_DosLeds__: Ejemplo de codificación para ambas plataformas, con funciones de preprocesador.
         
 
+__E_Analogicas__ 
+    Este directorio contiene los ejemplos de Entradas analogica
 
 
 
