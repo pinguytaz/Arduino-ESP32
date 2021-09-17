@@ -16,6 +16,14 @@ __ES_Digitales__
 
 __E_Analogicas__ 
     Este directorio contiene los ejemplos de Entradas analogica
+ -   __SensorTMP36__: Ejemplo de entrada analogica con un sensor de temperatura TMP36.
+    
+ -   __TMP36_Display__: Ejemplo anterior usando un display que se conecta por I2C.
+
+
+__PWM__ 
+    Este directorio contiene los ejemplos de uso de PWM
+ -   __EyS_Analog__: Ejemplo que utiliza tres entradas analogicas para regular tres salidas PWM que regulan un LED RGB. Tambien se utiliza una entrada digital, con un botón para pasar los datos de los datos de las entradas analogiaca a sus correspondientes salidas PWM.
 
 
 
