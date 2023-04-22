@@ -9,5 +9,5 @@
  - **VideoTutoriales**  
   
 - **MiBADUSB**
-  Aplicación en Leonardo-USB que nos permite generar Script BADUSB.
+  Aplicación en Leonardo-USB que nos permite utilizar Script similares a BADUSB.
   
