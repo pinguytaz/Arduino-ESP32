@@ -8,23 +8,23 @@
  *                 lanzar comandos.
  *                    
  * Historico:
- *       5 Octubre 2020    V1: Creación (no disponible ejecución de Macros, se debe obtimizar)
+ *  5 Octubre 2020  V1: Creación (no disponible ejecución de Macros, se debe optimizar)
+ *  11 Abril 2023   V2: Se hace que se ejecute al arrancar si existe el fichero EJECUTA.TXT, asi reducimos tamaño y facilidad quitan ordenes no necesarias
+ *                      
  * Librerias:
  *     Keyboard
  *     SPI
  *     SD
  ***************************************************************************************************/
 #include <Keyboard.h>
-
 #include <SPI.h>
 #include <SD.h>
 
 #define LED_ON  13
 #define LED_INF 8
-#define AUTORUN "EJECUTA.TXT"
 
-boolean autoEjec=false;  // En pricipio no esta.
-const String aplicacion="\n\n       Pingûino BADUSB V1.0\n       ---------------------";
+#define AUTORUN "EJECUTA.TXT"
+const String aplicacion="\n\n       Pingüino BADUSB V2.0\n       ---------------------";
 
 // Inicialización: LED, ejecución si existe "ejecuta.txt", carga de ficheros Payloads
 void setup() 
@@ -52,195 +52,26 @@ void setup()
  
   if (!SD.begin(4)) {  }  
 
-  Keyboard.begin();   //Inicializa teclado.
+  Keyboard.begin(KeyboardLayout_es_ES);   //Inicializa teclado en español
+  Serial.println(F("Teclado inicializado"));
   // SI existe fichero de autoejecución se ejecuta
   if (SD.exists(AUTORUN))
   {
-      autoEjec = true; //Existe autoejecución
+      //autoEjec = true; //Existe autoejecución
+      Serial.println(F("Se lanza autoejecucion"));
       EjecutaScript(AUTORUN);
   }
-  
+
    // Todo inicializado correctamente.
   digitalWrite(LED_ON, HIGH);   // Se queda encendido indicando que es 
   digitalWrite(LED_INF, LOW);  
 
 }
-/********************** Bucle de ejecución   *********/
+/********************** Bucle de ejecución que no hace nada pues el script se lanza al principio   *********/
 void loop() 
 {
-    char opcion;
-    char comando[100];
-    int i = 0;
-    char caracter;
-        
-    Serial.println(aplicacion);
-    Serial.println(F("1.- Ejecución Payload cargado en SD"));
-    Serial.println(F("2.- Ejecutar comando"));
-    if(autoEjec) Serial.println(F("3.- Desactiva Autoarranque"));
-    else Serial.println(F("3.- Activa Autoarranque"));
-     
-    while(Serial.available()<=0) { }   // Espera a ver si se pulsa algo.
-  
-    opcion = Serial.read();
-    while(Serial.available())  { Serial.read(); } // Vacia resto.
-      
-    if(opcion=='1')payload();
-    else if(opcion=='2')
-    {
-        Serial.print(F("Escriba comando: "));
-        while(Serial.available()<=0) { }
-        while(Serial.available()>0)
-        {
-            caracter = Serial.read();
-            comando[i++] = caracter;
-        }
-        comando[i] = '\x00';
-        ProcesaComando(comando);
-    }
-    else if(opcion=='3') autoarranque();
-}       
-
-/*******************************************************************************
- * payload()
- *    Opcion de ejecución de un payload cargado
- *******************************************************************************/
-void payload()
-{
-   int ficheros=0;
-   String nombre;
-   char opcion;
-
-   Serial.println(aplicacion);
-   Serial.println(F("          Ficheros PayLoad "));
-
-   ficheros = listaPayloads();
-   Serial.print(F("¿Cual ejecutamos?: "));
-
-   if(ficheros > 0) // Recogemos uno.
-   {
-       while(Serial.available()<=0) { }  //Esperamos opcion
-       opcion = Serial.read();
-       while(Serial.available()) { Serial.read(); }  // Borra resto.
-           
-       if(opcion >= '1' && opcion <= (ficheros+48)) //opcion correcta se localiza nombre
-       {
-           // Obtenemos nombre de fichero
-           nombre = nombre_fichero(opcion-48); // el 48 es el ASCII del 0.
-           EjecutaScript(nombre);
-       }
-   }   
-}
-
-/******************************************************************************
- * String nombre_fichero(int opcion)
- *         Obtiene el nombre del fichero seleccionado por parametro.
- *****************************************************************************/
- String nombre_fichero(int opcion)
- {
-     File dir = SD.open("/");
-     int i=1;
-     String nombre="";
-    
-     while (nombre == "")
-     {
-         File entrada =  dir.openNextFile(); // Recorrido fichero
-         if (!entrada.isDirectory()) // Solo trata ficheros.
-         {
-             if(i==opcion)  // Se ejecuta dichero.
-             {
-                 nombre = String(entrada.name());
-             }
-             i++;
-         }
-         entrada.close();
-    }
-
-    dir.close();
-    return nombre;
-}
-
-/******************************************************************************* 
- *  autoarranque() 
- *       Activa o desactiva el autoarranque (Fichero EJECUTA.TXT)
- *******************************************************************************/
-void autoarranque()
-{
-    int ficheros=0;
-    String nombre;
-    char opcion;
-    File archivo;
-    File fp_ejecuta; 
-    char c;
-            
-    if(autoEjec) // Esta activado
-    {
-        SD.remove(AUTORUN);
-        Serial.println(F("Autorun Desactivado"));
-        autoEjec = false;
-    }
-    else  // Como esta desactivado, se solicita
-    {
-        Serial.println(aplicacion);
-        Serial.println(F("          Activar Autorun "));
-
-        ficheros = listaPayloads();
-        Serial.println(F("¿Cual activamos?: "));
-
-        if(ficheros > 0) // Recogemos uno.
-        {
-            while(Serial.available()<=0) { }  //Esperamos opcion
-            opcion = Serial.read();
-            while(Serial.available()) { Serial.read(); }  // Borra resto.
-           
-            if(opcion >= '1' && opcion <= (ficheros+48)) //opcion correcta se localiza nombre
-            {
-                 // Obtenemos nombre de fichero
-                 nombre = nombre_fichero(opcion-48); // el 48 es el ASCII del 0.
-                 archivo = SD.open(nombre, FILE_READ);
-                 fp_ejecuta = SD.open(AUTORUN, FILE_WRITE); 
-                 c = archivo.read();
-                 while(c != -1) //Leemos hasta el final
-                 {
-                     fp_ejecuta.write(c);
-                     c = archivo.read(); 
-                 }
-                 archivo.close();
-                 fp_ejecuta.close();
-                 Serial.println("Fichero de autorun: "+ nombre+" ACTIVADO");
-                 autoEjec = true;
-            }
-        }   
-    }
-}
  
-/*******************************************************************************
- * int listaPayloads()  
- *       Lista los fichero Payloads, Retorna el numero de ficheros
- *******************************************************************************/
-int listaPayloads(void)
-{
-    File dir = SD.open("/");
-    int i=1;
-
-    Serial.println(F("Lista de ficheros disponibles"));
-
-    while (true) 
-    {
-       File entrada =  dir.openNextFile();
-       if (!entrada)  break;   // No tenemos más archivos 
-      
-       if (!entrada.isDirectory())
-       {
-           Serial.print(i++);
-           Serial.println(".- "+String(entrada.name()));
-       }
-       entrada.close();
-    }
-
-    dir.close();
-    return (i-1);
-}
-
+}       
 
 /*******************************************************************************
  * EjecutaScript
@@ -248,6 +79,7 @@ int listaPayloads(void)
  *******************************************************************************/
 void EjecutaScript(String fichero) 
 {
+  Serial.println("Solicita ejecución de: "+fichero);
   File nFichero = SD.open(fichero,FILE_READ);
   char caracter;
   char comando[255];
@@ -266,7 +98,8 @@ void EjecutaScript(String fichero)
              comando[i] = '\x00'; // Ponemos el final.
              if (strlen(comando) > 0) 
              {
-                 ProcesaComando(comando);
+                delay(500);
+                ProcesaComando(comando);
              }
              i=0;
          }
@@ -297,8 +130,9 @@ void ProcesaComando(char* comando)
   // SUELTA Suelta todas las teclas, ideal combinación de teclas presionada
   if (Localiza(comando, "SUELTA")) 
   {
-      Keyboard.releaseAll(); // Libera todas 
+    Keyboard.releaseAll(); // Libera todas 
   }
+      
   // CADENA <caracteres>  Enviamos una cadena de caracteres 
   if (Localiza(comando, "CADENA ")) 
   {
@@ -313,7 +147,6 @@ void ProcesaComando(char* comando)
   if (Localiza(comando, "ENTER ")) 
   {
     Keyboard.press(KEY_RETURN);
-    Keyboard.releaseAll();
   }
   // CMD
   if (Localiza(comando, "CMD ")) 
@@ -324,8 +157,22 @@ void ProcesaComando(char* comando)
   if (Localiza(comando, "KEY ")) 
   {
     cod_tecla = Decodifica(comando + 4);
-    if (cod_tecla > 0) Keyboard.press(cod_tecla);
+    if (cod_tecla > 0) Keyboard.press(cod_tecla);   
+    //Keyboard.release(cod_tecla);
   }
+
+  /* Ejecuta un fichero
+  if (Localiza(comando, "EJECUTA ")) 
+  {
+    Serial.println("Se lanza ejecución");
+    EjecutaScript(comando + 8);
+    
+    myFile = SD.open(command + 7);
+    delay(500);
+    ExecScript();
+        
+  }
+  */
   
   digitalWrite(LED_INF, LOW);
 }
@@ -335,19 +182,15 @@ void ProcesaComando(char* comando)
  * 
  *        Devolvera true si el patron esta al principio de la cadena.
  *************************************************************************/
-int Localiza(char* cadena, char const* objetivo) 
+boolean Localiza(char* cadena, char const* objetivo) 
 {
   int i=0;
-  boolean j = true;
+  boolean esPatron = true;
   for (i = 0; i < strlen(objetivo); i++) 
   {
-    if (cadena[i] != objetivo[i]) 
-    {
-       j=false;
-       
-    }
+    if (cadena[i] != objetivo[i]) esPatron=false;
   }
-  return j;
+  return esPatron;
 }
 
 /**************************************************************************

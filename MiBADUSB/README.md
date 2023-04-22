@@ -10,14 +10,34 @@ El autor __NO asume ninguna responsabilidad__ por la forma en que elija utilizar
 
 
 ##Acerca de MiBADUSB
-Es un codigo en Arduino (Arduino Leonardo con lector de tarjeta MicroSD) que nos permite realizar un BADUSB para pruebas de Pentesting, programando los script en un lenguaje similar al de Rubber Ducky.
+Desarrollo para placa "BadUSB(DM3212) 
+* ESP8266 Permite la disponibilidad de WIFI
+* ATmega32u4 Micro de arduino leonardo que nos permite la gestion del teclado.
+
+ MIBADUSB nos permite realizar pruebas de Pentesting, programando los script en un lenguaje similar al de Rubber Ducky.  
+ En la version 2 se elimina menú y solo es ejecución, reduciendo el espacio para en un futuro programa WIFI y asi hacerlo interactivo.
+
+##Compilación
+   Deberemos tener instaladas las librerias: "Keyboard by Arduino" y "SD by Arduino, SparkFun".  
+   Placa a Seleccionar "Arduino Leonardo"
 
 ##Uso
-    MiBADUSB nos permite ejecutar Script de tecleo, ya sea nada más conectarse (debe existir el fichero EJECUTA.TXT) como lanzarlos desde una consola serie(debe existir el fichero EJECUTA.TXT) desde la consola serie podremos asignar inhabilitar la ejecución o asignar un fichero de auto ejecución, al igual que nos perrmitira ejecutar ficheros definidos en la tarjeta SD.
+    MiBADUSB nos permite ejecutar Script de tecleo que se almacena en un fichero llamado EJECUTA.txt y se localiza en la tarjeta SD.  
+Los comando disponibles son:
+* SUELTA     		Libera todas las teclas  
+* CADENA <cadena> 	Envia una cadena  
+* PAUSA  <tiempo>  	Realizamos una pusa en milisegundos.  
+* ENTER      		Enviamos un ENTER  
+* CMD   			Se lanza un comando, este envia el ENTER para la ejecución.  
 
-## Mejoras pendientes
-   Reducir el tamaño del ejecutable, para poder añadir la funcion MACRO que nos permitira que un script ejecute otro script.
+Si no se conoce comando es como si fuera un comentario.
+
+
+## Enlaces de interes  
+* https://github.com/TheMMcOfficial/CJMCU-3212-wifi_ducky  
+* https://github.com/spacehuhn/wifi_ducky  
+* https://github.com/exploitagency/ESPloitV2  
+* https://github.com/joelsernamoreno/badusb_sd_wifi  
 
 __Website__: https://www.pinguytaz.net
    
-
