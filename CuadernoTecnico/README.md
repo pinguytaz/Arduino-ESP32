@@ -65,14 +65,14 @@ __Enlaces.txt__
        - **BLEclienteESP32**: Cliente que puede obtener datos de dos servidores BLEservidorESP32.  
   
 - **/WIFI**: Ejemplos WIFI.  
-      - **WIFI_AP** Ejemplo conexión como punto de acceso con un ESP32.  
-      - **WIFI_Scan** Programa que realiza un escaneo de la red WIFI.  
-      - **WIFI_HTTP** Ejemplo de realizar una solicitud GET y una solicitud POST con formato JSON.  
-      - **WIFIServidorWEB** Ejemplo de un servidor WEB en nuestro ESP32 que nos permitira encender o apagar un LED y ademas informara del estado de este y el valor de un potenciometro que simulara ser un sensor de temperatura.  
-      - **/WIFI_A_BBDD** Ejemplo de un servidor en python que recibe datos de un cliente ESP32 y los almacena en una BBDD.  
-  
-         - **Servidor**  Cliente Python que almacena los datos recibidos en una BBDD sqlite3 o en un fichero .CSV.  
-         - **Cliente**  ESP32 que toma medidas y las envia a un servidor, en nuestro caso realizado en Python.  
+    - **WIFI_AP** Ejemplo conexión como punto de acceso con un ESP32.  
+    - **WIFI_Scan** Programa que realiza un escaneo de la red WIFI.  
+    - **WIFI_HTTP** Ejemplo de realizar una solicitud GET y una solicitud POST con formato JSON.  
+    - **WIFIServidorWEB** Ejemplo de un servidor WEB en nuestro ESP32 que nos permitira encender o apagar un LED y ademas informara del estado de este y el valor de un potenciometro que simulara ser un sensor de temperatura.  
+    - **/WIFI_A_BBDD** Ejemplo de un servidor en python que recibe datos de un cliente ESP32 y los almacena en una BBDD.  
+      
+       - **Servidor**  Cliente Python que almacena los datos recibidos en una BBDD sqlite3 o en un fichero .CSV.  
+       - **Cliente**  ESP32 que toma medidas y las envia a un servidor, en nuestro caso realizado en Python.  
 
 
 
