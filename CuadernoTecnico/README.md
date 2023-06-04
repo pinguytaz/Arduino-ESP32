@@ -56,12 +56,11 @@ __Enlaces.txt__
 -  **ScanESP32**: Programa Scan I2C para el ESP32, usando TwoWire y configurando los pines.  
   
 - **/BLuetooth**: Ejemplos tratamiento Bluetooth.  
-      -  **ConfigurarHc05**: Nos permite configurar el modulo HC-05 mediante comandos AT.    
-      -  **BLEscanESP32**: Localiza dispositivos bluettoth-BLE al alcance.  
+      - **ConfigurarHc05**: Nos permite configurar el modulo HC-05 mediante comandos AT.  
+      - **BLEscanESP32**: Localiza dispositivos bluettoth-BLE al alcance.  
       - **/BLE**: Ejemplo de comunicacion de un Arduino y un ESP32 mediante I2C.  
-  
-         -  **BLEservidorESP32**: Servidor con dos servicios y uno con caracteristicas de L/E y notificacion.  
-         -  **BLEclienteESP32**: Cliente que puede obtener datos de dos servidores BLEservidorESP32.  
+            - **BLEservidorESP32**: Servidor con dos servicios y uno con caracteristicas de L/E y notificacion.  
+            -  **BLEclienteESP32**: Cliente que puede obtener datos de dos servidores BLEservidorESP32.  
   
 - **/WIFI**: Ejemplos WIFI.  
       - **WIFI_AP** Ejemplo conexión como punto de acceso con un ESP32.  
