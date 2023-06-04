@@ -1,0 +1,15 @@
+; Ejemplo para Windows (abre URL)
+PAUSA 2500
+
+; Sacamos comando
+KEY LEFT_GUI
+CADENA r
+PAUSA 100
+SUELTA
+
+PAUSA 200
+
+; llamamos a la URL de nuestra pagina
+CMD https://www.pinguytaz.net/
+PAUSA 350
+

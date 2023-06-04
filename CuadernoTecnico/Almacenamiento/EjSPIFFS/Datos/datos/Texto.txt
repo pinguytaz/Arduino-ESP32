@@ -1,0 +1,3 @@
+Prueba SPIFFS
+Esta es la informacion que debe figurar del fichero
+de la particion de datos

@@ -23,14 +23,31 @@ Desarrollo para placa "BadUSB(DM3212)
 
 ##Uso
     MiBADUSB nos permite ejecutar Script de tecleo que se almacena en un fichero llamado EJECUTA.txt y se localiza en la tarjeta SD.  
-Los comando disponibles son:
-* SUELTA     		Libera todas las teclas  
-* CADENA <cadena> 	Envia una cadena  
-* PAUSA  <tiempo>  	Realizamos una pusa en milisegundos.  
-* ENTER      		Enviamos un ENTER  
-* CMD   			Se lanza un comando, este envia el ENTER para la ejecución.  
+Los comando disponibles son:  
+* SUELTA . . . . . . . . . . . .Libera todas las teclas  
+* CADENA "cadena" . .  . Envia una cadena  
+* PAUSA  "tiempo" . . . . . Realizamos una pusa en milisegundos.  
+* ENTER . . . . . . . . . .  . . .Enviamos un ENTER  
+* CMD . . . . . . . . . . . . . . Se lanza un comando, este envia el ENTER para la ejecución.  
+* KEY "cod_Tecla" . . . . . .Pulsa la tecla indicada.  
+* ESPACIO . . . . . . . . . . . .Pulsa un espacio  
+* 
+
 
 Si no se conoce comando es como si fuera un comentario.
+
+Codigos de teclas:  
+LEFT_GUI y RIGHT_GUI Tecla de GUI La izquierda y la derecha  
+LEFT_CTRL, RIGHT_CTRL Teclase de control.  
+LEFT_SHIFT, RIGHT_SHIFT Teclase de shift.  
+LEFT_ALT, RIGHT_ALT Teclase de Alt.  
+RETURN, ESC, TAB  
+F1-F12  
+UP_ARROW, DOWN_ARROW, LEFT_ARROW, RIGHT_ARROW Flechas  
+KEY_INSERT, KEY_DELETE, KEY_PAGE_UP, KEY_PAGE_DOWN, KEY_HOME, KEY_END Teclas edición.  
+CAPS_LOCK Activa mayusculas.  
+BACKSPACE Tecla de borras.  
+
 
 
 ## Enlaces de interes  

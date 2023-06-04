@@ -1,0 +1,40 @@
+Para grabar, configurar y ver info de ESP32 se dispone de comandos que vienen en el entorno de desarrollo del ESPressif
+https://docs.espressif.com/projects/esp-idf/en/stable/esp32/get-started/index.html
+
+Tambien se encuentran al instalar el JSON en el IDE de Arduino.
+
+#esptool.py   debemos darle permiso de ejecución, en Windows es un .exe
+      ~/.arduino15/packages/esp32/tools/esptool_py/4.5.1/esptool.py
+https://docs.espressif.com/projects/esptool/en/latest/esp32/esptool/basic-commands.html
+OJO si esta el IDE de arduino activado, desconectar el monitor serie, lo mismo que si se tiene en linea de comandos.
+
+Información del CHIP, Nos da tipo de CHIP, MAC, identificador del CHIP si dispone de el.
+   chip_id 
+   read_mac 
+   flash_id   no informa ademas  del fabricante, dispositivo, Tamaño de memoria Flash
+   image_info <.bin) nos da información de una descarga por ejemplo. 
+     esptool --version 2 <fichero.bin>
+Grabación
+   write_flash Escribir datos binarios en la flash, pudiendo configurar el modo y tamaño.
+   erase_flash Borrado de la flash
+       esptool.py --port COM4 write_flash 0x1000 my_app-0x01000.bin
+Lectura de Flash
+    read_flash Leer contenido y se vuelcan a un .bin, le inidicamos inicio, tamaño fichero .bin 
+        esptool.py read_flash 0 0x400000 PlDEV.bin   // podemos añadir --chip esp32 para indicar el tipo de chip
+    read_flash_status Estado
+
+
+#espota
+~/.arduino15/packages/esp32/hardware/esp32/2.0.9/tools/espota.py
+#mkspiffs
+~/.arduino15/packages/esp32/tools/mkspiffs/0.2.3/mkspiffs    https://www.lucadentella.it/en/2017/09/30/esp32-22-spiffs/
+   ./mkspiffs.exe -c /home/luca/spiffs_image/ -b 8192 -p 256 -s 1048576 /inicio/luca/spiffs_image.img   // 
+   
+   -b    SPIFFS_LOG_BLOCK_SIZE , tamaño, en bytes, para cada bloque de memoria  (8192  ¿4096?)
+   -p    SPIFFS_LOG_PAGE_SIZE , tamaño, en bytes, para cada página de memoria  (256)
+   Datos de la partición archivo CSV
+   SPIFFS_BASE_ADDR , dirección de la memoria flash desde la que comienza la partición SPIFFS
+   SPIFFS_SIZE , tamaño – en bytes – de la partición
+
+
+

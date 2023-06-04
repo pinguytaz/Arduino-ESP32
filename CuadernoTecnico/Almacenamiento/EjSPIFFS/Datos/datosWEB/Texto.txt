@@ -1,0 +1,2 @@
+Prueba SPIFFS
+este podria ser el fichero de pagina HTML

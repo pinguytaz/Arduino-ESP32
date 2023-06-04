@@ -1,0 +1,12 @@
+; Ejemplo para Linux i3 (abre fichero y escribe Hola Mundo)
+PAUSA 10000
+KEY LEFT_GUI
+KEY RETURN
+SUELTA
+PAUSA 2000
+
+CMD vi prueba.BAD
+PAUSA 1500
+CADENA i
+CADENA Hola Mundo
+

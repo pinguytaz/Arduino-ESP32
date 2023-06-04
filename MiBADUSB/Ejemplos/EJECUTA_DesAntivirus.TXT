@@ -1,0 +1,25 @@
+; Ejemplo Windows (abre notePAD y escribe Hola Mundo Windows)
+
+PAUSA 2500
+
+REM Sacamos editor
+KEY LEFT_GUI
+CADENA r
+PAUSA 100
+SUELTA
+
+PAUSA 200
+
+CMD notepad prueba2.BAD
+PAUSA 350
+KEY RIGHT_ARROW
+KEY RETURN
+SUELTA LEFT_ARROW
+SUELTA RETURN
+
+
+CADENA Hola Mundo WINDOWS
+KEY Z
+PAUSA 10
+SUELTA
+

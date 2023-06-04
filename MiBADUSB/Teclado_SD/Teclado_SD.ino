@@ -144,7 +144,7 @@ void ProcesaComando(char* comando)
     delay(atoi(comando+6));
   }
   // ENTER   Envia ENTER
-  if (Localiza(comando, "ENTER ")) 
+  if (Localiza(comando, "ENTER")) 
   {
     Keyboard.press(KEY_RETURN);
   }
@@ -159,6 +159,11 @@ void ProcesaComando(char* comando)
     cod_tecla = Decodifica(comando + 4);
     if (cod_tecla > 0) Keyboard.press(cod_tecla);   
     //Keyboard.release(cod_tecla);
+  }
+  // ESPACIO Enviamos un espacio 
+  if (Localiza(comando, "ESPACIO")) 
+  {
+    Keyboard.print(" ");
   }
 
   /* Ejecuta un fichero
@@ -200,41 +205,41 @@ boolean Localiza(char* cadena, char const* objetivo)
 int Decodifica(String tecla)
 {
   int retorno = -1;
-  if (tecla == "KEY_LEFT_CTRL") retorno = 0x80;
-  if (tecla == "KEY_LEFT_SHIFT") retorno = 0x81;
-  if (tecla == "KEY_LEFT_ALT") retorno = 0x82;
-  if (tecla == "KEY_LEFT_GUI") retorno = 0x83;
-  if (tecla == "KEY_RIGHT_CTRL") retorno = 0x84;
-  if (tecla == "KEY_RIGHT_SHIFT") retorno = 0x85;
-  if (tecla == "KEY_RIGHT_ALT") retorno = 0x86;
-  if (tecla == "KEY_RIGHT_GUI") retorno = 0x87;
-  if (tecla == "KEY_UP_ARROW") retorno = 0xDA;
-  if (tecla == "KEY_DOWN_ARROW") retorno = 0xD9;
-  if (tecla == "KEY_LEFT_ARROW") retorno = 0xD8;
-  if (tecla == "KEY_RIGHT_ARROW") retorno = 0xD7;
-  if (tecla == "KEY_BACKSPACE") retorno = 0xB2;
-  if (tecla == "KEY_TAB") retorno = 0xB3;
-  if (tecla == "KEY_RETURN") retorno = 0xB0;
-  if (tecla == "KEY_ESC") retorno = 0xB1;
-  if (tecla == "KEY_INSERT") retorno = 0xD1;
-  if (tecla == "KEY_DELETE") retorno = 0xD4;
-  if (tecla == "KEY_PAGE_UP") retorno = 0xD3;
-  if (tecla == "KEY_PAGE_DOWN") retorno = 0xD6;
-  if (tecla == "KEY_HOME") retorno = 0xD2;
-  if (tecla == "KEY_END") retorno = 0xD5;
-  if (tecla == "KEY_CAPS_LOCK") retorno = 0xC1;
-  if (tecla == "KEY_F1") retorno = 0xC2;
-  if (tecla == "KEY_F2") retorno = 0xC3;
-  if (tecla == "KEY_F3") retorno = 0xC4;
-  if (tecla == "KEY_F4") retorno = 0xC5;
-  if (tecla == "KEY_F5") retorno = 0xC6;
-  if (tecla == "KEY_F6") retorno = 0xC7;
-  if (tecla == "KEY_F7") retorno = 0xC8;
-  if (tecla == "KEY_F8") retorno = 0xC9;
-  if (tecla == "KEY_F9") retorno = 0xCA;
-  if (tecla == "KEY_F10") retorno = 0xCB;
-  if (tecla == "KEY_F11") retorno = 0xCC;
-  if (tecla == "KEY_F12") retorno = 0xCD;
+  if (tecla == "LEFT_CTRL") retorno = 0x80;
+  if (tecla == "LEFT_SHIFT") retorno = 0x81;
+  if (tecla == "LEFT_ALT") retorno = 0x82;
+  if (tecla == "LEFT_GUI") retorno = 0x83;
+  if (tecla == "RIGHT_CTRL") retorno = 0x84;
+  if (tecla == "RIGHT_SHIFT") retorno = 0x85;
+  if (tecla == "RIGHT_ALT") retorno = 0x86;
+  if (tecla == "RIGHT_GUI") retorno = 0x87;
+  if (tecla == "UP_ARROW") retorno = 0xDA;
+  if (tecla == "DOWN_ARROW") retorno = 0xD9;
+  if (tecla == "LEFT_ARROW") retorno = 0xD8;
+  if (tecla == "RIGHT_ARROW") retorno = 0xD7;
+  if (tecla == "BACKSPACE") retorno = 0xB2;
+  if (tecla == "TAB") retorno = 0xB3;
+  if (tecla == "RETURN") retorno = 0xB0;
+  if (tecla == "ESC") retorno = 0xB1;
+  if (tecla == "INSERT") retorno = 0xD1;
+  if (tecla == "DELETE") retorno = 0xD4;
+  if (tecla == "PAGE_UP") retorno = 0xD3;
+  if (tecla == "PAGE_DOWN") retorno = 0xD6;
+  if (tecla == "HOME") retorno = 0xD2;
+  if (tecla == "END") retorno = 0xD5;
+  if (tecla == "CAPS_LOCK") retorno = 0xC1;
+  if (tecla == "F1") retorno = 0xC2;
+  if (tecla == "F2") retorno = 0xC3;
+  if (tecla == "F3") retorno = 0xC4;
+  if (tecla == "F4") retorno = 0xC5;
+  if (tecla == "F5") retorno = 0xC6;
+  if (tecla == "F6") retorno = 0xC7;
+  if (tecla == "F7") retorno = 0xC8;
+  if (tecla == "F8") retorno = 0xC9;
+  if (tecla == "F9") retorno = 0xCA;
+  if (tecla == "F10") retorno = 0xCB;
+  if (tecla == "F11") retorno = 0xCC;
+  if (tecla == "F12") retorno = 0xCD;
   if (retorno == -1)  // No es simbolo, convertimos string
   {
       String cadena = String(tecla);
