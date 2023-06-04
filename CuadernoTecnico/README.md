@@ -59,8 +59,8 @@ __Enlaces.txt__
       -  **ConfigurarHc05**: Nos permite configurar el modulo HC-05 mediante comandos AT.    
       -  **BLEscanESP32**: Localiza dispositivos bluettoth-BLE al alcance.  
       - **/BLE**: Ejemplo de comunicacion de un Arduino y un ESP32 mediante I2C.  
+  
          -  **BLEservidorESP32**: Servidor con dos servicios y uno con caracteristicas de L/E y notificacion.  
-   
          -  **BLEclienteESP32**: Cliente que puede obtener datos de dos servidores BLEservidorESP32.  
   
 - **/WIFI**: Ejemplos WIFI.  
