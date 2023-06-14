@@ -104,6 +104,9 @@ __Enlaces.txt__
       -  **LigthSleep**: Ejemplo de sueño ligero que se activa por tiempo.  
       -  **DeepSleep**: Ejemplo de sueño profundo con activación por tiempo, TOUCH, GPIO  
 - **EjWS2812B**: Ejemplo de uso de los leds RGB WS2812.  
+- **EJHCSR04**: Ejemplo de utilización del sensor HC-SR04 para medir distancias a obtaculos.
+- **TFTST7735S**: Ejemplo de uso de la pantalla TFT (ST7735) 
+
 
 
 
