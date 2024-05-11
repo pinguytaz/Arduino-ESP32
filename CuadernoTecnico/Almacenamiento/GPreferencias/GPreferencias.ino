@@ -23,10 +23,8 @@ void setup()
 
 
    // Grabamos los datos del espacio de nombres WIFI
-   //D_WIFI.putString("SSID","Nombre SSID");
-  // D_WIFI.putString("Clave","Clave de la WIFI");
-   D_WIFI.putString("SSID","garum");
-   D_WIFI.putString("Clave","Confe.28091966.2.4");
+   D_WIFI.putString("SSID","Nombre SSID");
+   D_WIFI.putString("Clave","Clave de la WIFI");
    
    
    // Grabamos los datos del espacio de nombres Varios

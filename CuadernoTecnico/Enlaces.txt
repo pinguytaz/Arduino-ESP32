@@ -1,8 +1,25 @@
-Tarjetas adicionales
 ESP32
-   https://dl.espressif.com/dl/package_esp32_index.json
+	https://dl.espressif.com/dl/package_esp32_index.json
 
-Driver CP22102
-https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
+Driver CP22102 para conexión USB y Windows.
+	https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
 
+Expansión de puertos
+    1.- Placa PCA9685
+        Nos permite controlar hasta 16 Servos por I2C. y se pueden conectar varias placas en serie.
+       
+    2.- 74HC595    Registro de desplazamiento, control de matriz de LEDs
+           
+    3.- ADS1115/ADS1015  Convertidor 4-ADCs que se comunican por I2C.
+        Permite 4 direcciones I2C lo que nos permite poner 4 placas en el BUS. (16ADCs)
+       
+    4.- MCP3008   8 canales ADC que se comunica por SPI
+    
+    5.- 74HC4067 Multiplexor 16 ADC
+       Dispone de 16 entradas analogicas, se selecciona con 4 pines (5 con enable) digitales y nos da el resultado de la analogica en un pin que se lleva a uno de los Ax de Arduino.
+    
+SHEll (Expansores, Driver)
+    1.- Placa de expansión NanoV3
+    2.- Placa de expansión ESP32
+    3.- Controlador L298N   Para alimentación de motores
 

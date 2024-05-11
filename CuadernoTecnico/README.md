@@ -1,14 +1,12 @@
 # Fuentes Cuaderno Tecnico
 
-[![license](https://www.pinguytaz.net/IMG_GITHUB/gplv3-with-text-84x42.png)] (https://github.com/pinguytaz/Arduino/blob/master/LICENSE)
-<BR><BR><BR>
-
-Fuentes, esquemas, enlaces y extra del libro "__¿De 0 a 100 con Arduino y ESP32?__" proxima publicación y titulo proviisional, así como los ejercicios resueltos.  
-<BR>
+Fuentes, esquemas, enlaces y extras del libro "__¿De 0 a 100 con Arduino y ESP32?__" que cubre la programación basica del Arduino y ESP32 hasta llegar a temas avanzados como multitarea, los sistemas de disco del ESP32, etc.
+<BR><BR>
+***********Enlace de compra en Amazon tan pronto este disponible**************************
+<BR><BR>
 
 __Enlaces.txt__ 
-    Este fichero contiene enlaces de interes para Arduino y ESP: Drivers, Tarjetas adicionales 
-  
+    Este fichero contiene enlaces de interes para Arduino y ESP: Drivers, placas, componentes  
 
 **/P_Basica**   
    Ejercicios resueltos de los capitulos inicialies de programación  
@@ -16,7 +14,7 @@ __Enlaces.txt__
 **/ES_Digitales**  
     Este directorio contiene los ejemplos de Entradas y Salidad Digitales.
  
- -   **ES_Digitales**: Ejemplo simple con un boton para ir conmutando los LEDs conectados a la salidas digitales del Arduino
+ -  **ES_Digitales**: Ejemplo simple con un boton para ir conmutando los LEDs conectados a la salidas digitales del Arduino
     
  -  **Ej_DosLeds**: Ejemplo de codificación para ambas plataformas, con funciones de preprocesador.  
   
@@ -35,7 +33,10 @@ __Enlaces.txt__
   
   -   **Sonido**: Ejemplo de generación de notas con las intrucciones que tone y ledcWriteTone, para Arduino y ESP32 respectivamente.  
   
-  -   **Musica**: Ejemplo interpretación de partituras, y función de unificación para ambos sistemas  
+  - **Musica**: Ejemplo interpretación de partituras, y función de unificación para ambos sistemas  
+  - **MotorContinua**: Ejemplo del control de velocidad en un motor de continua con MOSFET (IRPF520) y utilizacion PWM en ESP32.  
+  - **ServoMotor**: Ejemplo de control de un servomotor, con boton para iniciar secuencia y regulacion de alimentacion..
+
 
 
  **/Comunicaciones** 
@@ -96,7 +97,6 @@ __Enlaces.txt__
 **/Varios**  
     Este directorio contiene los ejemplos algo mas complejos, como uso display, motores, generar musica.  
 
-- **MotorContinua**: Ejemplo del control de velocidad en un motor de continua con MOSFET (IRPF520) y utilizacion PWM en ESP32.  
 -  **EjTouch**:  Ejemplo simple del uso del las entradas capacitativas del ESP32.  
 - **InfoESP32**: Nos da información del ISP32, ID, MAC..  
 - **Multitarea**: Esquema basico para utilizar los dos nucleos del ESP32.  
@@ -106,6 +106,8 @@ __Enlaces.txt__
 - **EjWS2812B**: Ejemplo de uso de los leds RGB WS2812.  
 - **EJHCSR04**: Ejemplo de utilización del sensor HC-SR04 para medir distancias a obtaculos.
 - **TFTST7735S**: Ejemplo de uso de la pantalla TFT (ST7735) 
+- **MotorTotal**: Ejemplo de entrada digitales (Boton) analogica (potenciometro) y LM293N para mover un motor (Con esquema) 
+
 
 
 
