@@ -1,15 +1,14 @@
-# Fuentes Cuaderno Tecnico
+# Fuentes, esquemas y extras de "De 0 a 100 con Arduino y ESP32"  
+
+Libro que cubre desde la programación básica a la avanzada de estas dos plataformas.
 
 
-Fuentes, esquemas, enlaces y extras del libro "__¿De 0 a 100 con Arduino y ESP32__" que cubre la programación básica del Arduino y ESP32 hasta llegar a temas avanzados como multitarea, los sistemas de disco del ESP32, etc.
-<BR>
-
-[![Libro](https://github.com/pinguytaz/Arduino-ESP32/tree/master/CuadernoTecnico/Portada.jpg)](https://amzn.eu/d/32OJJdF)
+![Portada|15](Portada.jpg)  Descripción y compra: <https://amzn.eu/d/32OJJdF>
 
 <BR>
 
 __Enlaces.txt__ 
-Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, componentes 
+Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, componentes.  
 
 **/P_Basica** 
 Ejercicios resueltos de los capítulos iniciales de programación 
