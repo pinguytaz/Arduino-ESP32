@@ -1,9 +1,10 @@
 # Arduino
 
 
-- **Cuaderno Técnico**
-Fuentes, esquemas, enlaces y extras del libro "__¿De 0 a 100 con Arduino y ESP32?__" que cubre la programación básica del Arduino y ESP32 hasta llegar a temas avanzados como multitarea, los sistemas de disco del ESP32, etc.  
+- **Cuaderno Técnico**  
+Fuentes, esquemas, enlaces y extras del libro "__De 0 a 100 con Arduino y ESP32__" (<https://amzn.eu/d/32OJJdF>) que cubre la programación básica del Arduino y ESP32 hasta llegar a temas avanzados como multitarea, los sistemas de disco del ESP32, etc. 
   
+
 - **Balanza de Piezas**
 Balanza para pesar piezas, recalibrable a diferentes piezas, el interfaz es una apliación móvil realizada con AppInventor por el canal de Bluetooth.  
 
@@ -17,9 +18,7 @@ Pequeños video tutoriales, enlaces a youtube,  de funciones en arduino
 Aplicación en Leonardo-USB que nos permite utilizar Script similares a BADUSB.  
 
 
-
-
-<br><br><br>
+<br><br>
 
 __Website__: <https://www.pinguytaz.net>
 
