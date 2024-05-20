@@ -81,8 +81,8 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 
 
 <br><br><br>
-__Libro "De 0 a 100 con Arduino y ESP32"__: <https://amzn.eu/d/32OJJdF>  
-__Website__: <https://www.pinguytaz.net>
+__Libro: ["De 0 a 100 con Arduino y ESP32"](https://amzn.eu/d/32OJJdF)__  
+__Website__: <https://www.pinguytaz.net>  
 
 
 
