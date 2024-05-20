@@ -1,22 +1,21 @@
-# Arduino
+# Arduino y ESP32
 
 
-- **Cuaderno Técnico**  
-Fuentes, esquemas, enlaces y extras del libro "__De 0 a 100 con Arduino y ESP32__" (<https://amzn.eu/d/32OJJdF>) que cubre la programación básica del Arduino y ESP32 hasta llegar a temas avanzados como multitarea, los sistemas de disco del ESP32, etc. 
+- **[Cuaderno Técnico](CuadernoTecnico)**  
+Fuentes, esquemas, enlaces y extras del libro "__[De 0 a 100 con Arduino y ESP32](https://amzn.eu/d/32OJJdF)__" que cubre la programación básica del Arduino y ESP32 hasta llegar a temas avanzados como multitarea, los sistemas de disco del ESP32, etc.  
   
-
-- **Balanza de Piezas**
+- **[Balanza de Piezas](Balanza)**  
 Balanza para pesar piezas, recalibrable a diferentes piezas, el interfaz es una apliación móvil realizada con AppInventor por el canal de Bluetooth.  
-
-- **TesterResistencia**
+  
+- **[TesterResistencia](TesterResistencia)**  
 Circuito para medir resistencias con Arduino y visualizarlas en un Display  
-
-- **VideoTutoriales**
+  
+- **[VideoTutoriales](VideoTutoriales)**  
 Pequeños video tutoriales, enlaces a youtube,  de funciones en arduino  
-
-- **MiBADUSB**
+  
+- **[MiBADUSB](MiBADUSB)**  
 Aplicación en Leonardo-USB que nos permite utilizar Script similares a BADUSB.  
-
+  
 
 <br><br>
 
