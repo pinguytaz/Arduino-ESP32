@@ -1,6 +1,6 @@
-# Fuentes, esquemas y extras de "De 0 a 100 con Arduino y ESP32"  
+# "De 0 a 100 con Arduino y ESP32"  
 
-Libro que cubre desde la programación básica a la avanzada de estas dos plataformas.
+Fuentes, esquemas y extras de Libro, que cubre desde la programación básica a la avanzada de estas dos plataformas.
 
 
 ![Portada|15](Portada.jpg)  Descripción y compra: <https://amzn.eu/d/32OJJdF>
@@ -66,6 +66,13 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **EjSPIFFS**: Ejemplo de uso del sistema de archivos SPIFFS, tanto en subida de datos desde comandos como el uso de varias particiones SPIFFS.  
 - **EjSPIFFS_ST7735**: Ejemplo de uso del sistema de archivos SPIFFS, leyendo un fichero de texto y dibujos BMP que se visualizan en la pantalla, usando la librería SPIFFS_ImageReader.  
   
+![Portada|15](Nuevo.png) **RFID** Ejemplos para programar RFID/NFC  
+  
+- **[Ejemplos RFID-NFC ](../../RFID-NFC/ArduinoRC522)**  Sencillos ejemplos con lector RC522.  
+    - **Id_Lector** Valida la comunicación y versión con el lector  
+    - **LecturaTarjetas** Lee tarjetas e identintifica el tipo.  
+  
+
 **/Varios** Este directorio contiene los ejemplos algo mas complejos, como uso display, motores, generar musica.  
   
 - **EjTouch**: Ejemplo simple del uso del las entradas capacitivas del ESP32. 
@@ -78,7 +85,19 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **EJHCSR04**: Ejemplo de utilización del sensor HC-SR04 para medir distancias a obtaculos.
 - **TFTST7735S**: Ejemplo de uso de la pantalla TFT (ST7735) 
 - **MotorTotal**: Ejemplo de entrada digitales (Boton) analógica (potenciómetro) y LM293N para mover un motor (Con esquema) 
+  
 
+![Portada|15](Nuevo.png)**/RustArduino**  Ejemplos de como programar Arduino con el lenguaje Rust  
+  
+- **digitales.rs**:  Ejemplo de uso de pines digitales  
+- **motor.rs** Ejemplo digitales usando una salida a un motor de continua.  
+- **analogicos.rs**: Ejemplo de uso de entradas analógicas  
+- **pwm.rs** Ejemplo de uso de pines PWN, usando Timers realizando un fade de los LEDs.  
+- **intexternas.rs** Ejemplo de uso de interrupciones externas.  
+- **scani2c.rs** Escanea las direcciones I2C que se encuentran en el BUS.  
+- **servomotor.rs** Ejemplo de uso de Timer para el manejo de servomotores.  
+- **sonar.rc**  Ejemplo de Timer para utilización del sonar HC-SR04.  
+  
 
 <br><br><br>
 __Libro: ["De 0 a 100 con Arduino y ESP32"](https://amzn.eu/d/32OJJdF)__  

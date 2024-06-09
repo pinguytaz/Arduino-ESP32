@@ -1,0 +1,10 @@
+[build]
+target = "avr-specs/avr-atmega328p.json"
+
+[target.'cfg(target_arch = "avr")']
+runner = "ravedude uno -cb 57600"
+# Para Nano con bootloader OLD
+#runner = "ravedude nano -P /dev/ttyUSB0 -cb 57600"
+
+[unstable]
+build-std = ["core"]

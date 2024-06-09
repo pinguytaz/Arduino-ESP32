@@ -1,6 +1,7 @@
 # Para no subir los DOC y Excell
 *.ods
 *.odt
+*.odt#
 *.xcf
 NoPasar/
 Libro/
