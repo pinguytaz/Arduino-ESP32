@@ -68,7 +68,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
   
 ![Portada|15](Nuevo.png) **RFID** Ejemplos para programar RFID/NFC  
   
-- **[Ejemplos RFID-NFC ](../../RFID-NFC/ArduinoRC522)**  Sencillos ejemplos con lector RC522.  
+- **[Ejemplos RFID-NFC ](https://github.com/pinguytaz/RFID-NFC/tree/main/ArduinoRC522)**  Sencillos ejemplos con lector RC522.  
     - **Id_Lector** Valida la comunicación y versión con el lector  
     - **LecturaTarjetas** Lee tarjetas e identintifica el tipo.  
   
