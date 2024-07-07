@@ -4,8 +4,9 @@ Fuentes, esquemas y extras de Libro, que cubre desde la programación básica a 
 
 
 ![Portada|15](Portada.jpg)  Descripción y compra: <https://amzn.eu/d/32OJJdF>
-
 <BR>
+![Portada|15](Nuevo.png)**[Anexo del libro: Fe de erratas, actualizaciones de librerias y nuevos temas]**  Anexo_Arduino_ESP32.pdf
+
 
 __Enlaces.txt__ 
 Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, componentes.  
@@ -66,7 +67,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **EjSPIFFS**: Ejemplo de uso del sistema de archivos SPIFFS, tanto en subida de datos desde comandos como el uso de varias particiones SPIFFS.  
 - **EjSPIFFS_ST7735**: Ejemplo de uso del sistema de archivos SPIFFS, leyendo un fichero de texto y dibujos BMP que se visualizan en la pantalla, usando la librería SPIFFS_ImageReader.  
   
-![Portada|15](Nuevo.png) **RFID** Ejemplos para programar RFID/NFC  
+**RFID** Ejemplos para programar RFID/NFC  
   
 - **[Ejemplos RFID-NFC ](https://github.com/pinguytaz/RFID-NFC/tree/main/ArduinoRC522)**  Sencillos ejemplos con lector RC522.  
     - **Id_Lector** Valida la comunicación y versión con el lector  
