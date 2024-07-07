@@ -4,8 +4,8 @@ Fuentes, esquemas y extras de Libro, que cubre desde la programación básica a 
 
 
 ![Portada|15](Portada.jpg)  Descripción y compra: <https://amzn.eu/d/32OJJdF>
-<BR>
-![Portada|15](Nuevo.png)**[Anexo del libro: Fe de erratas, actualizaciones de librerias y nuevos temas]**  Anexo_Arduino_ESP32.pdf
+<BR>  
+![Portada|15](Nuevo.png)**[Anexo del libro: Fe de erratas, actualizaciones de librerias y nuevos temas](Anexo_Arduino_ESP32.pdf)**  
 
 
 __Enlaces.txt__ 
