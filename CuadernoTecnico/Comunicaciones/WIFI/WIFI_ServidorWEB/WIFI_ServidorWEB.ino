@@ -12,8 +12,8 @@
 #include <WebServer.h>
 
 // SSID y clave de la WIFI que dara acceso a la red a la que se conectaran los navegadores clientes.
-const char* ssid = "garum";
-const char* clave = "Confe.28091966.2.4";
+const char* ssid = "tussid";
+const char* clave = "tuclave";
 
 WebServer servidor(8080);  // Puerto de nuestra pagina
 

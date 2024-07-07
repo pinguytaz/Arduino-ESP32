@@ -20,16 +20,18 @@ void setup()
   Serial.begin(115200);
   Serial.println();
   Serial.println("Configurando Punto de acceso");
+  
+  WiFi.mode(WIFI_AP);
+  WiFi.softAP(ssid, password);  
   IPAddress    apIP(10, 10, 10, 1);
   WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));  
-  WiFi.softAP(ssid, password);  
 
   IPAddress miIP = WiFi.softAPIP();   // Obtenemos la IP del AP
   Serial.print("Direccion IP del AP: ");
   Serial.println(miIP);
   
   Serial.println("Punto de acceso iniciado");
-  WiFi.onEvent(WiFiConectaEstacion, SYSTEM_EVENT_AP_STACONNECTED);  // Llamada al conectar.
+  WiFi.onEvent(WiFiConectaEstacion, ARDUINO_EVENT_WIFI_AP_STACONNECTED);  // Llamada al conectar.
 }
 
 void loop()
