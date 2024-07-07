@@ -1,0 +1,5 @@
+key,type,encoding,value
+prueba,namespace,,
+Campo1,data,string,UncampocualquierA
+Campo2,data,string,Valordelaclave
+Autor,data,string,elNombre
