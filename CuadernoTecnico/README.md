@@ -29,8 +29,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **Sonido**: Ejemplo de generación de notas con las instrucciones que tone y ledcWriteTone, para Arduino y ESP32 respectivamente.  
 - **Música**: Ejemplo interpretación de partituras, y función de unificación para ambos sistemas  
   
-**/Motores** Este directorio contiene los ejemplos dael uso de los motores: continua, servomotor y Paso a Paso  
-
+[**/Motores**](Motores) Este directorio contiene los ejemplos del uso de los motores: continua, servomotor y Paso a Paso  
 
 **/Comunicaciones**  Este directorio contiene los ejemplos de comunicaciones: Serie, I2C, WIFI, Bluetooth, etc.  
   
