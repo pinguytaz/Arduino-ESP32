@@ -28,6 +28,9 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **EyS_Analog**: Ejemplo que utiliza tres entradas analógicas para regular tres salidas PWM que regulan un LED RGB. También se utiliza una entrada digital, con un botón para pasar los datos de los datos de las entradas analógica a sus correspondientes salidas PWM.  
 - **Sonido**: Ejemplo de generación de notas con las instrucciones que tone y ledcWriteTone, para Arduino y ESP32 respectivamente.  
 - **Música**: Ejemplo interpretación de partituras, y función de unificación para ambos sistemas  
+  
+**/Motores** Este directorio contiene los ejemplos dael uso de los motores: continua, servomotor y Paso a Paso  
+
 
 **/Comunicaciones**  Este directorio contiene los ejemplos de comunicaciones: Serie, I2C, WIFI, Bluetooth, etc.  
   
