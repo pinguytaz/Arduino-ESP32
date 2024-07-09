@@ -4,6 +4,9 @@ ESP32
 Driver CP22102 para conexión USB y Windows.
 	https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip
 
+Enlaces Info, tutorial  ESP32
+    https://esp32io.com/
+
 Expansión de puertos
     1.- Placa PCA9685
         Nos permite controlar hasta 16 Servos por I2C. y se pueden conectar varias placas en serie.

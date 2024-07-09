@@ -28,9 +28,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **EyS_Analog**: Ejemplo que utiliza tres entradas analógicas para regular tres salidas PWM que regulan un LED RGB. También se utiliza una entrada digital, con un botón para pasar los datos de los datos de las entradas analógica a sus correspondientes salidas PWM.  
 - **Sonido**: Ejemplo de generación de notas con las instrucciones que tone y ledcWriteTone, para Arduino y ESP32 respectivamente.  
 - **Música**: Ejemplo interpretación de partituras, y función de unificación para ambos sistemas  
-- **MotorContinua**: Ejemplo del control de velocidad en un motor de continua con MOSFET (IRPF520) y utilización PWM en ESP32.  
-- **ServoMotor**: Ejemplo de control de un servomotor, con botón para iniciar secuencia y regulación de alimentación.  
-  
+
 **/Comunicaciones**  Este directorio contiene los ejemplos de comunicaciones: Serie, I2C, WIFI, Bluetooth, etc.  
   
 - **/EjSerie**: Ejemplo de comunicación de un Arduino y un ESP32 por el puerto Serie, estan los dos programas.
@@ -64,7 +62,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **GrabaDatos**: Un programa algo más completo de grabación de varios datos (configuraciones WIFI, etc) con sus funciones de escritura y lectura, para grabar datos comunes de configuración. Ejecutamos una vez el programa con nuestros datos de WIFI por ejemplo y luego solo tendremos que copiar la funcion lectura en nuestros programas de WIFI para disponer de los datos de nuestra red.  
 - **GPreferencias y L_Preferencias**: Ejemplo de uso para grabar datos con librería Preference.h con dos espacios de nombre, para datos de WIFI y Varios.  
 - **Particiones**: Visualizamos las particiones de nuestro dispositivo.  
--![Portada|15](Nuevo.png) **NVS**: Como subir archivos desde la linea de comandos a la partición NVS, que es la que contiene los datos de Preference.h, explicado en el Anexo (3.1.1)  
+- ![Portada|15](Nuevo.png) **NVS**: Como subir archivos desde la linea de comandos a la partición NVS, que es la que contiene los datos de Preference.h, explicado en el Anexo (3.1.1)  
 - **EjSPIFFS**: Ejemplo de uso del sistema de archivos SPIFFS, tanto en subida de datos desde comandos como el uso de varias particiones SPIFFS.  
 - **EjSPIFFS_ST7735**: Ejemplo de uso del sistema de archivos SPIFFS, leyendo un fichero de texto y dibujos BMP que se visualizan en la pantalla, usando la librería SPIFFS_ImageReader.  
   
@@ -86,7 +84,6 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **EjWS2812B**: Ejemplo de uso de los leds RGB WS2812. 
 - **EJHCSR04**: Ejemplo de utilización del sensor HC-SR04 para medir distancias a obtaculos.
 - **TFTST7735S**: Ejemplo de uso de la pantalla TFT (ST7735) 
-- **MotorTotal**: Ejemplo de entrada digitales (Boton) analógica (potenciómetro) y LM293N para mover un motor (Con esquema) 
   
 
 ![Portada|15](Nuevo.png)**/RustArduino**  Ejemplos de como programar Arduino con el lenguaje Rust  
@@ -100,8 +97,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **servomotor.rs** Ejemplo de uso de Timer para el manejo de servomotores.  
 - **sonar.rc**  Ejemplo de Timer para utilización del sonar HC-SR04.  
   
-
-<br><br><br>
+<br><br>
 __Libro: ["De 0 a 100 con Arduino y ESP32"](https://amzn.eu/d/32OJJdF)__  
 __Website__: <https://www.pinguytaz.net>  
 
