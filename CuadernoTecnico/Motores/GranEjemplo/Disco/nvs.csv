@@ -1,0 +1,8 @@
+key,type,encoding,value
+guija,namespace,,
+SSID,data,string,GranEjemplo
+Clave,data,string,ElMotor2024
+Hostname,data,string,pinguytaz
+Aplicacion,data,string,Ejemplo motor PasoaPaso
+Version,data,string,0.1
+Autor,data,string,Fco. Javier Rodriguez Navarro

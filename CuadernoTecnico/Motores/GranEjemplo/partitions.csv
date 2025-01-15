@@ -1,0 +1,9 @@
+# Tabla de particion a total 0x400000
+# 
+#Name,		Type,	SubType,	Offset,		Size,	Flags
+nvs,		data,	nvs,		0x9000,		0x6000,
+phy_init,	data,	phy,		0xF000,		0x1000,
+aplica,		app,	factory,	0x10000,	0x2e0000,
+WEB,		data,	spiffs,		0x2f0000,	0x100000,
+coredump,	data,	coredump, 	0x3f0000,	0x10000,
+

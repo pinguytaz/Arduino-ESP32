@@ -5,8 +5,8 @@ Fuentes, esquemas y extras de Libro, que cubre desde la programación básica a 
 
 ![Portada|15](Portada.jpg)  Descripción y compra: <https://amzn.eu/d/32OJJdF>
 <BR>  
-![Portada|15](Nuevo.png)**[Anexo del libro: Fe de erratas, actualizaciones de librerias y nuevos temas](Anexo_Arduino_ESP32.pdf)**  
-
+![Portada|15](Nuevo.png)[Anexo del libro: Fe de erratas, actualizaciones de librerias y nuevos temas](Anexo_Arduino_ESP32.pdf)**  
+Resumen: Nuevo ejemplo, actualizaciones tablas WIFI
 
 __Enlaces.txt__ 
 Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, componentes.  
@@ -17,6 +17,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 
 - **ES_Digitales**: Ejemplo simple con un botón para ir conmutando los LEDs conectados a la salidas digitales del Arduino.  
 - **Ej_DosLeds**: Ejemplo de codificación para ambas plataformas, con funciones de preprocesador.  
+![Portada|15](Nuevo.png)- **Ej_INT**: Ejemplo de Interrupciones en entradas digitales de Arduino (apartado dellibro 7.1.4) y ejemplo tambien en Rust "intexternas.rs"  
   
 **/E_Analogicas** Este directorio contiene los ejemplos de Entradas analógica  
 
@@ -29,7 +30,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **Sonido**: Ejemplo de generación de notas con las instrucciones que tone y ledcWriteTone, para Arduino y ESP32 respectivamente.  
 - **Música**: Ejemplo interpretación de partituras, y función de unificación para ambos sistemas  
   
-[**/Motores**](Motores) Este directorio contiene los ejemplos del uso de los motores: continua, servomotor y Paso a Paso  
+![Portada|15](Nuevo.png)[**/Motores**](Motores) Este directorio contiene los ejemplos del uso de los motores: continua, servomotor y Paso a Paso  
 
 **/Comunicaciones**  Este directorio contiene los ejemplos de comunicaciones: Serie, I2C, WIFI, Bluetooth, etc.  
   
@@ -64,7 +65,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **GrabaDatos**: Un programa algo más completo de grabación de varios datos (configuraciones WIFI, etc) con sus funciones de escritura y lectura, para grabar datos comunes de configuración. Ejecutamos una vez el programa con nuestros datos de WIFI por ejemplo y luego solo tendremos que copiar la funcion lectura en nuestros programas de WIFI para disponer de los datos de nuestra red.  
 - **GPreferencias y L_Preferencias**: Ejemplo de uso para grabar datos con librería Preference.h con dos espacios de nombre, para datos de WIFI y Varios.  
 - **Particiones**: Visualizamos las particiones de nuestro dispositivo.  
-- ![Portada|15](Nuevo.png) **NVS**: Como subir archivos desde la linea de comandos a la partición NVS, que es la que contiene los datos de Preference.h, explicado en el Anexo (3.1.1)  
+- **NVS**: Como subir archivos desde la linea de comandos a la partición NVS, que es la que contiene los datos de Preference.h, explicado en el Anexo (3.1.1)  
 - **EjSPIFFS**: Ejemplo de uso del sistema de archivos SPIFFS, tanto en subida de datos desde comandos como el uso de varias particiones SPIFFS.  
 - **EjSPIFFS_ST7735**: Ejemplo de uso del sistema de archivos SPIFFS, leyendo un fichero de texto y dibujos BMP que se visualizan en la pantalla, usando la librería SPIFFS_ImageReader.  
   
@@ -88,7 +89,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **TFTST7735S**: Ejemplo de uso de la pantalla TFT (ST7735) 
   
 
-![Portada|15](Nuevo.png)**/RustArduino**  Ejemplos de como programar Arduino con el lenguaje Rust  
+**/RustArduino**  Ejemplos de como programar Arduino con el lenguaje Rust  
   
 - **digitales.rs**:  Ejemplo de uso de pines digitales  
 - **motor.rs** Ejemplo digitales usando una salida a un motor de continua.  
