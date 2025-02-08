@@ -21,14 +21,12 @@ void setup()  // configuracion placa
    // También cambiaríamos la velocidad del puerto de consola segun plataforma
    #if defined(PLAT_ARDUINO)
       Serial.begin(9600);
+      pinMode( BZ , OUTPUT); // Buzzer se define como salida
     #else
       Serial.begin(115200);
       pinMode(BZ, OUTPUT);
-      ledcAttachPin(BZ, 0);   // Enlazamos Pin con canal 0
+      ledcAttach(BZ, 1000, 8);
     #endif
-
-
-  pinMode( BZ , OUTPUT); // Buzzer se define como salida
 }
 
 void loop()  //Se repite indefinidamente,

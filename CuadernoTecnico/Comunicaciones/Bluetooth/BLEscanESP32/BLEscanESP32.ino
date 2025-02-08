@@ -35,12 +35,15 @@ void setup() {
 }
 
 void loop() {
+  /*  Version 2
   BLEScanResults dispositivosEncontrados = pBLEScan->start(scanTime, false);
+  */
+  BLEScanResults *dispositivosEncontrados = pBLEScan->start(scanTime, false);
   Serial.print("Dispositivos encontrados: ");
-  Serial.println(dispositivosEncontrados.getCount());
-  for(int i=0; i<dispositivosEncontrados.getCount(); i++)
+  Serial.println(dispositivosEncontrados->getCount());
+  for(int i=0; i<dispositivosEncontrados->getCount(); i++)
   {
-     BLEAdvertisedDevice dispositivo = dispositivosEncontrados.getDevice(i);  
+     BLEAdvertisedDevice dispositivo = dispositivosEncontrados->getDevice(i);  
      Serial.printf("%d Nombre: %s \n", i+1, dispositivo.getName().c_str());
      Serial.printf("\tDirección: %s \n", dispositivo.getAddress().toString().c_str());
      if(dispositivo.haveTXPower())

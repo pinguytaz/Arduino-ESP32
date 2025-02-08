@@ -33,9 +33,12 @@ void setup()  // configuracion placa
    #if defined(PLAT_ARDUINO)
       Serial.begin(9600);
     #else
+    /* Version antigua V2
       ledcSetup(0, 0, 10);
       ledcAttachPin(BZ, 0);
-
+      */
+      ledcAttachChannel(BZ,0,10,0);
+      
       Serial.begin(115200);
     #endif
 }
