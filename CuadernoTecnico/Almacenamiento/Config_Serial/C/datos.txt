@@ -1,0 +1,9 @@
+255 0 0    Este es el color rojo
+0 255 0    Este es el color verde
+0 0 255    Este es el color azul
+0 255 255    Este es el color cyan
+255 0 255    Este es el color magenta
+255 255 0    Este es el color amarillo
+255 128 0    Este es el color naranja
+255 255 255    Este es el color blanco
+0 0 102    Este es el color morado

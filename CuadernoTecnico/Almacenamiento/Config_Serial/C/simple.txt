@@ -1,0 +1,3 @@
+255 0 0    Este es el color rojo
+0 255 0    Este es el color verde
+0 0 255    Este es el color azul
