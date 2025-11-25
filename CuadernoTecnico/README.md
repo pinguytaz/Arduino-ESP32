@@ -62,7 +62,7 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 **/Almacenamiento** Este directorio contiene los ejemplos de almacenamiento de datos en dispositivos permanentes como puede ser una EEPROM.  
   
 - **GrabaEEPROM y LeeEEPROM**: Dos simples programas para ver como se graba y leen datos de la EEPROM  
-![Portada|15](Nuevo.png)- **Config_Serial**: Ejemplo para configurar un programa, almacenando los datos en la EEPROM, mediante un protocolo Serie.
+- **Config_Serial**: Ejemplo para configurar un programa, almacenando los datos en la EEPROM, mediante un protocolo Serie.
   Se da tambien el programa en ".C" tanto para Linux como Windows que leeria el fichero de configuración y lo pasa por Serie.  
 - **GrabaDatos**: Un programa algo más completo de grabación de varios datos (configuraciones WIFI, etc) con sus funciones de escritura y lectura, para grabar datos comunes de configuración. Ejecutamos una vez el programa con nuestros datos de WIFI por ejemplo y luego solo tendremos que copiar la funcion lectura en nuestros programas de WIFI para disponer de los datos de nuestra red.  
 - **GPreferencias y L_Preferencias**: Ejemplo de uso para grabar datos con librería Preference.h con dos espacios de nombre, para datos de WIFI y Varios.  
@@ -76,6 +76,9 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **[Ejemplos RFID-NFC ](https://github.com/pinguytaz/RFID-NFC/tree/main/ArduinoRC522)**  Sencillos ejemplos con lector RC522.  
     - **Id_Lector** Valida la comunicación y versión con el lector  
     - **LecturaTarjetas** Lee tarjetas e identintifica el tipo.  
+![Portada|15](Nuevo.png)  - **[Ejemplos RC522 lectura UID y Sector 5 ](https://github.com/pinguytaz/RFID-NFC/tree/main/PoC_PresHacMadridESP32)** Ejemplos con lector RC522 y solicitud de autorización a Servidor Python, PoC realizado en charla Tech de HackMadrid.  
+    - **PoC_ESP32IA** Programa arduino manejando el lector RC522 por SPI y la libreria  (https://github.com/OSSLibraries/Arduino_MFRC522v2)  
+    - **PruebaServ** Servidor de pruebas, el PoC se realizo con un servidor de Agentes IA realidado por Rafael..  
   
 
 **/Varios** Este directorio contiene los ejemplos algo mas complejos, como uso display, motores, generar musica.  
