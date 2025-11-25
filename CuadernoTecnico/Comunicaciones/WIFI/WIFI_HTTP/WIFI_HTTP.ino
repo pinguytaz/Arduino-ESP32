@@ -10,8 +10,10 @@
 #include <HTTPClient.h>
 #include <ArduinoJson.h>
 
-const char* ssid = "{Usuario WIFI}";
-const char* clave = "{Clave WIFI}";
+const char *ssid = "LaCamara";
+const char *clave = "LaClaveLarga";
+
+
 
 //Direcciones de prueba
 String PruebaGET = "https://ifconfig.me/ip";
@@ -25,7 +27,7 @@ void setup()
   // Nos conectamos a la WIFI
   WiFi.mode(WIFI_STA);      // Ponemos modo estacion
   WiFi.begin(ssid, clave);
-  Serial.println("Connecting");
+  Serial.println("Conectando");
   while(WiFi.status() != WL_CONNECTED) 
   {
     delay(500);
