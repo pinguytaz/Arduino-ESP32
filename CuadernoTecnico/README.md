@@ -5,7 +5,7 @@ Fuentes, esquemas y extras de Libro, que cubre desde la programación básica a 
 
 ![Portada|15](Portada.jpg)  Descripción y compra: <https://amzn.eu/d/32OJJdF>
 <BR>  
-![Portada|15](Nuevo.png)[Anexo del libro: Fe de erratas, actualizaciones de librerias y nuevos temas](Anexo_Arduino_ESP32.pdf)**  
+   Anexo del libro: Fe de erratas, actualizaciones de librerias y nuevos temas](Anexo_Arduino_ESP32.pdf)**  
 Resumen: Nuevo ejemplo, actualizaciones tablas WIFI
 
 __Enlaces.txt__ 
@@ -76,11 +76,11 @@ Este fichero contiene enlaces de interés para Arduino y ESP: Drivers, placas, c
 - **[Ejemplos RFID-NFC ](https://github.com/pinguytaz/RFID-NFC/tree/main/ArduinoRC522)**  Sencillos ejemplos con lector RC522.  
     - **Id_Lector** Valida la comunicación y versión con el lector  
     - **LecturaTarjetas** Lee tarjetas e identintifica el tipo.  
-![Portada|15](Nuevo.png)  - **[Ejemplos RC522 lectura UID y Sector 5 ](https://github.com/pinguytaz/RFID-NFC/tree/main/PoC_PresHacMadridESP32)** Ejemplos con lector RC522 y solicitud de autorización a Servidor Python, PoC realizado en charla Tech de HackMadrid.  
+- **[Ejemplos RC522 lectura UID y Sector 5 ](https://github.com/pinguytaz/RFID-NFC/tree/main/PoC_PresHacMadridESP32)** Ejemplos con lector RC522 y solicitud de autorización a Servidor Python, PoC realizado en charla Tech de HackMadrid.  
     - **PoC_ESP32IA** Programa arduino manejando el lector RC522 por SPI y la libreria  (https://github.com/OSSLibraries/Arduino_MFRC522v2)  
-    - **PruebaServ** Servidor de pruebas, el PoC se realizo con un servidor de Agentes IA realidado por Rafael..  
+    - **PruebaServ** Servidor de pruebas, el PoC se realizo con un servidor de Agentes IA realidado por Rafael.  
+- **[Libreria lector IN-R200 RFID-UHF ](https://github.com/pinguytaz/LibreriasArduino/tree/main/LibR200)** Libreria para el lector IN-R200 que nos permite tratar TAG UHF.  ![Portada|15](Nuevo.png)  
   
-
 **/Varios** Este directorio contiene los ejemplos algo mas complejos, como uso display, motores, generar musica.  
   
 - **EjTouch**: Ejemplo simple del uso del las entradas capacitivas del ESP32. 
